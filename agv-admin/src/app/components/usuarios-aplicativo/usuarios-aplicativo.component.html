@@ -1,0 +1,14 @@
+<app-crosswork-grid
+  [gridTitle]="gridTitle"
+  [service]="0"
+  [paginated]="true"
+  [reorder]="false"
+  [search]="true"
+  [create]="true"
+  (onObjectChange)="updateObjectParameter($event)"
+  [row_detail]="{'isModal':true,'modalName':'#agenteModal'}"
+  [columns]="[
+	{'name':'#','filter':false,'attr':''},
+	{'name':'CPF', 'filter':true, 'attr':'cpfAgente', 'value':'', 'class': 'cpf'},
+    {'name':'Nome', 'filter':false, 'attr':'nomeAgente'}]" >
+</app-crosswork-grid>

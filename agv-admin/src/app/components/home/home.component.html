@@ -1,0 +1,28 @@
+<app-header></app-header>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-3">
+      <ul class="nav nav-pills nav-stacked">
+        <li role="presentation" class="active"><a href="javascript:;" data-toggle="tab">Menu</a></li>
+        <li role="presentation">
+          <a href="javascript:;" data-toggle="collapse"
+             data-target="#submenuConfig" aria-expanded="false">Configuração</a>
+          <ul class="nav collapse" id="submenuConfig" role="menu">
+    				<li><a href="#"> > Cadastrar cliente</a></li>
+    				<li><a href="#"> > Habilitar cliente</a></li>
+    				<li><a href="#"> > Habilitar contato</a></li>
+    			</ul>
+        </li>
+        <li role="presentation"><a href="javascript:;" [routerLink]="['noticias']" >Cliente por segmento</a></li>
+        <li role="presentation"><a href="javascript:;" [routerLink]="['parametros-gerais']" >Solicitação de cadastro</a></li>
+        <li role="presentation"><a href="javascript:;" [routerLink]="['parametros-gerais']" >Envio de aviso</a></li>
+        <li role="presentation"><a href="javascript:;" [routerLink]="['parametros-gerais']" >Fatura por e-mail</a></li>
+        <li role="presentation"><a href="javascript:;" [routerLink]="['parametros-gerais']" >Comunicado</a></li>
+        <li role="presentation"><a href="javascript:;" [routerLink]="['usuarios-aplicativo']" >Usuários do Aplicativo</a></li>
+      </ul>
+    </div>
+    <div class="col-md-9 middle-panel">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>
